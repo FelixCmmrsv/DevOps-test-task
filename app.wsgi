@@ -1,4 +1,5 @@
-import sys
-sys.path.insert(0, '/var/www/flask-app')
 
-from app import app as application
+import sys
+sys.path.insert(0, "/var/www/html/GreenAPI-test-task")
+
+from init import app as application
