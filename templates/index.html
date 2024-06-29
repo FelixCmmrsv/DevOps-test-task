@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN-API test task</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <label for="idInstance"></label><input type="text" id="idInstance" placeholder="idInstance">
+            <label for="ApiTokenInstance"></label><input type="text" id="ApiTokenInstance" placeholder="ApiTokenInstance">
+            <button onclick="callApi('getSettings')">getSettings</button>
+            <button onclick="callApi('getStateInstance')">getStateInstance</button>
+            <label for="phoneNumber"></label><input type="text" id="phoneNumber" placeholder="Phone Number">
+            <label for="message"></label><input type="text" id="message" placeholder="Message">
+            <button onclick="callApi('sendMessage')">sendMessage</button>
+            <label for="fileUrl"></label><input type="text" id="fileUrl" placeholder="File URL">
+            <button onclick="callApi('sendFileByUrl')">sendFileByUrl</button>
+        </div>
+        <div class="response-container">
+            <h3>Response:</h3>
+            <pre id="responseOutput"></pre>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
